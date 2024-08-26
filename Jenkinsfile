@@ -94,7 +94,7 @@ pipeline {
                                     cleanRemote: false,
                                     excludes: '',
                                     execCommand: '''
-                                        java -jar /opt/deploy-sharun/springboot-backend-0.0.7-SNAPSHOT.jar &
+                                        nohup java -jar /opt/deploy-sharun/springboot-backend-0.0.7-SNAPSHOT.jar &
                                     ''',
                                     execTimeout: 120000,
                                     flatten: false,
