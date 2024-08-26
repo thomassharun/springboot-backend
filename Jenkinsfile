@@ -128,7 +128,7 @@ pipeline {
         always {
             echo 'always section'
             // Publish Surefire test results
-            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+            
         }
     }**/
 }
