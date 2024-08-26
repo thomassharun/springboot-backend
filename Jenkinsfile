@@ -52,7 +52,7 @@ pipeline {
                 echo 'JUnit test Completed'
             }
         }
-*/
+        **/
         stage('Copy artifacts to EC2') {
             steps {
                 sshPublisher(
@@ -117,7 +117,8 @@ pipeline {
             }
         }
 
-    }/*
+    }
+    /**
     post {
         failure {
             // This block will execute if any of the previous stages fail, including unit tests
@@ -129,5 +130,5 @@ pipeline {
             // Publish Surefire test results
             junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
         }
-    }*/
+    }**/
 }
