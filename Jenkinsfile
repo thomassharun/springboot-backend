@@ -17,7 +17,8 @@ pipeline {
                 echo 'Maven build Completed'
             }
         }
-        //**
+        /**
+        
         stage('Integration Test') {
             steps {
                 // Run integration tests
@@ -34,7 +35,7 @@ pipeline {
             echo 'Integration test Completed'
             }
         }
-        //***
+        */
         stage('JUnit Test') {
             steps {
                 // Run Junit tests
