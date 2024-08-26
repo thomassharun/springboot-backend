@@ -95,7 +95,7 @@ pipeline {
                                     excludes: '',
                                     execCommand: '''
                                         cd /opt/deploy-sharun/
-                                        ansible-playbook start_container.yml
+                                        java -jar springboot-backend-0.0.7-SNAPSHOT.jar
                                     ''',
                                     execTimeout: 120000,
                                     flatten: false,
