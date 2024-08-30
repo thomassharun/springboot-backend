@@ -35,7 +35,7 @@ pipeline {
             echo 'Integration test Completed'
             }
         }
-        
+        **/
         stage('JUnit Test') {
             steps {
                 // Run Junit tests
@@ -52,7 +52,7 @@ pipeline {
                 echo 'JUnit test Completed'
             }
         }
-        **/
+        
         stage('Copy artifacts to EC2') {
             steps {
                 sshPublisher(
