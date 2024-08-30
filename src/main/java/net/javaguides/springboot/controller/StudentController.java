@@ -54,7 +54,7 @@ public class StudentController {
 
 	// get all Students
 	@GetMapping("/students-all")
-	public List<Student> getAllStudents() {
+	public List<Student> getAllStudentss() {
 		System.out.println(studentRepository.findAll());
 		return studentRepository.findAll();
 	}
