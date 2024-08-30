@@ -52,6 +52,13 @@ public class StudentController {
 		return studentRepository.findAll();
 	}
 
+	// get all Students
+	@GetMapping("/students-all")
+	public List<Student> getAllStudents() {
+		System.out.println(studentRepository.findAll());
+		return studentRepository.findAll();
+	}
+
 	// create Student rest api
 	@PostMapping("/student")
 	public Student createStudent(@RequestBody Student student) {
